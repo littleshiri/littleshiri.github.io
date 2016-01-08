@@ -20,6 +20,14 @@ h1 {
 	background-color: #006699;
 }
 
+#tail{
+	width:1000px;
+	margin: auto;
+	color: #006699;
+	font-size: 12px;
+	text-align: right;
+}
+
 .menu{
 	margin: auto;
 	float: left;
