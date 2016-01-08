@@ -2,11 +2,20 @@
 @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 
 p {
-	color:#006699;
-	background-color: #abcdef;
-	font-size: 20px;
-	font-family: "맑은 돋움", "돋움";
+	color:#123456;
+	border-style: dotted;
+	border-radius: 7px;
+	margin: 5px;
+	border-color: #abcdef;
+	font-size: 18px;
+	font-family: "맑은 고딕", "고딕", Gothic;
 }
+
+a{
+	color:#006699;
+	font-weight: bold;
+}
+
 h1 {
 	color: #006699;
 	font-size: 40px;
