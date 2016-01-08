@@ -14,13 +14,16 @@ h1 {
 }
 
 #header{
-	max-width: 1200px;
-	background-color: #006699;
-	margin: auto;
+	width: 1200px;
 }
 
 .menu{
+	float: left;
+	line-height: 67px;
+	text-align: middle;
 	background-color: #006699;
+	height: 67px;
+	width: 200px;
 	color: #ffffff;
 	font-size: 32px;
 	font-family: "Hanna", "맑은 고딕", "고딕", Gothic;
