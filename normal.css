@@ -1,4 +1,10 @@
+p {
+	color:#006699;
+	background-color: #abcdef;
+}
+
 #header{
-	max-width: 1200px;
-	margin: 0 auto;
+	max-width: 1200;
+	background-color: #006699;
+	margin: auto;
 }
