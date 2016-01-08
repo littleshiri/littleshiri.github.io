@@ -11,6 +11,7 @@
        url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff) format('woff'),
        url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf) format('truetype');
 }
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 
 p {
 	color:#006699;
@@ -21,7 +22,7 @@ p {
 h1 {
 	color: #006699;
 	font-size: 40px;
-	font-family: "Hanna", "맑은 고딕", "고딕", Gothic;
+	font-family: "Jeju Gothic", "맑은 고딕", "고딕", Gothic;
 }
 
 #header{
