@@ -14,10 +14,14 @@ h1 {
 }
 
 #header{
-	width: 1200px;
+	width: 1000px;
+	height: 67px;
+	margin: auto;
+	background-color: #006699;
 }
 
 .menu{
+	margin: auto;
 	float: left;
 	line-height: 67px;
 	text-align: middle;
