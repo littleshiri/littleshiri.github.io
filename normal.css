@@ -26,13 +26,13 @@ h1 {
 #header{
 	height: 67px;
 	width:1000px;
-	margin: auto;
+	margin:0 auto;
 	background-color: #006699;
 }
 
 #tail{
 	width:1000px;
-	margin: auto;
+	margin:0 auto;
 	color: #006699;
 	font-size: 12px;
 	text-align: right;
@@ -47,6 +47,19 @@ h1 {
 	height: 67px;
 	width: 200px;
 	color: #ffffff;
+	font-size: 32px;
+	font-family: "Hanna", "맑은 고딕", "고딕", Gothic;
+}
+
+.nowmenu{
+	margin: auto;
+	float: left;
+	line-height: 67px;
+	text-align: middle;
+	background-color: #ffffff;
+	height: 67px;
+	width: 200px;
+	color: #006699;
 	font-size: 32px;
 	font-family: "Hanna", "맑은 고딕", "고딕", Gothic;
 }
