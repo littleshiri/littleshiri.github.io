@@ -6,14 +6,17 @@ p {
 	border-style: dotted;
 	border-radius: 7px;
 	margin: 5px;
+	padding: 5px;
+	text-align: justify;
 	border-color: #abcdef;
-	font-size: 18px;
+	font-size: 15px;
 	font-family: "맑은 고딕", "고딕", Gothic;
 }
 
 a{
 	color:#006699;
 	font-weight: bold;
+	text-decoration: none;
 }
 
 h1 {
