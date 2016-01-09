@@ -38,6 +38,11 @@ h1 {
 	text-align: right;
 }
 
+#content{
+	width:1000px;
+	margin:0 auto;
+}
+
 .menu{
 	margin: auto;
 	float: left;
@@ -47,6 +52,18 @@ h1 {
 	height: 67px;
 	width: 200px;
 	color: #ffffff;
+	font-size: 32px;
+	font-family: "Hanna", "맑은 고딕", "고딕", Gothic;
+}
+.menu:hover{
+	margin: auto;
+	float: left;
+	line-height: 67px;
+	text-align: middle;
+	background-color: #006699;
+	height: 67px;
+	width: 200px;
+	color: #ddeeff;
 	font-size: 32px;
 	font-family: "Hanna", "맑은 고딕", "고딕", Gothic;
 }
