@@ -34,14 +34,14 @@ h1 {
 }
 
 #tail{
-	width:1000px;
+	width:970px;
 	margin:0 auto;
 	color: #006699;
 	font-size: 12px;
 	text-align: right;
 	float: none;
 	padding:15px;
-	border-width: 2px;
+	border-width: 1px;
 	border-color: #abcdef;
 	border-style: solid;
 	margin-top: 20px;
