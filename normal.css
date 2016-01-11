@@ -90,3 +90,19 @@ h1 {
 	font-size: 32px;
 	font-family: "Hanna", "맑은 고딕", "고딕", Gothic;
 }
+
+.gameitem{
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #abcdef;
+	border-width: 2px;
+	padding: 5px;
+}
+
+.gameitem:hover{
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #006699;
+	border-width: 2px;
+	padding: 5px;
+}
