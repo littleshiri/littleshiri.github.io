@@ -94,9 +94,9 @@ h1 {
 .gameitem{
 	border-style: solid;
 	border-radius: 5px;
-	border-color: #abcdef;
+	border-color: #ffffff;
 	border-width: 2px;
-	padding: 5px;
+	padding: 20px;
 }
 
 .gameitem:hover{
@@ -104,5 +104,5 @@ h1 {
 	border-radius: 5px;
 	border-color: #006699;
 	border-width: 2px;
-	padding: 5px;
+	padding: 20px;
 }
