@@ -11,7 +11,7 @@ function game(d){
 }
 
 var xmlhttp = new XMLHttpRequest();
-var url = "data/gameData.json";
+var url = "gameData.json";
 
 xmlhttp.onreadystatechange = function() {
 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
