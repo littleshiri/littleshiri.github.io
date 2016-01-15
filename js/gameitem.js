@@ -1,7 +1,7 @@
 var container = document.getElementById("container");
 
 function game(d){
-	var html = '<div class="gameitem">' + d.title + '</div>' ;
+	var html = '<div class="gameitem"><a href="'+'game/'+d.game+'.html"><h2>[' + d.platform + '] '+ d.title + '</h2></a></div>' ;
 	return html;
 }
 

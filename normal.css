@@ -3,17 +3,14 @@
 
 p {
 	color:#123456;
-	border-style: dotted;
-	border-radius: 7px;
-	margin: 5px;
 	padding: 5px;
 	text-align: justify;
-	border-color: #abcdef;
 	font-size: 15px;
 	font-family: "맑은 고딕", "고딕", Gothic;
 }
 
 a{
+	outline:none;
 	color:#006699;
 	font-weight: bold;
 	text-decoration: none;
@@ -24,6 +21,14 @@ h1 {
 	color: #006699;
 	font-size: 40px;
 	font-family: "Jeju Gothic", "맑은 고딕", "고딕", Gothic;
+	margin: 3px;
+}
+
+h2 {
+	color: #006699;
+	font-size: 25px;
+	font-family: "Jeju Gothic", "맑은 고딕", "고딕", Gothic;
+	font-weight: normal;
 	margin: 3px;
 }
 
@@ -97,6 +102,7 @@ h1 {
 	border-color: #ffffff;
 	border-width: 2px;
 	padding: 20px;
+	margin-bottom: 5px;
 }
 
 .gameitem:hover{
@@ -105,4 +111,5 @@ h1 {
 	border-color: #006699;
 	border-width: 2px;
 	padding: 20px;
+	margin-bottom: 5px;
 }
