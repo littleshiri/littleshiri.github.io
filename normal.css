@@ -11,6 +11,7 @@ p {
 
 a{
 	outline:none;
+	border-width: 0px;
 	color:#006699;
 	font-weight: bold;
 	text-decoration: none;
@@ -29,6 +30,8 @@ h2 {
 	font-size: 25px;
 	font-family: "Jeju Gothic", "맑은 고딕", "고딕", Gothic;
 	font-weight: normal;
+	line-height: 32px;
+	vertical-align: middle;
 	margin: 3px;
 }
 

@@ -32,6 +32,7 @@ var data = [
 	"title":"갸아악 우주선",
 	"platform":'Android',
 	"game":"gyaak",
+	"link":"https://play.google.com/store/apps/details?id=air.GyaaakSpaceship",
 	"comment":"testsetsetaset"
 },
 {
