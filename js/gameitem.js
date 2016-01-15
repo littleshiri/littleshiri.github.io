@@ -7,10 +7,13 @@ function game(title){
 	return html;
 }
 function parser(e){
-	alert(this.requestText);
-	data = JSON.parse(this.requestText);
+	if(this.readyState==4 && this.status==200){
+		alert(this.requestText);
+		//data = JSON.parse(this.requestText);
+		container.innerHTML += this.requestText;
+	}
 }
 
-request.onload = parser;
+request.onreadystatechange = parser
 request.open('GET', 'data/gameDATA.json', true);
 request.send();
