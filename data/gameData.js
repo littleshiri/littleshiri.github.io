@@ -21,6 +21,20 @@ var data = [
 	"comment":"testsetsetaset"
 },
 {
+	"year":2014,
+	"title":"창싸움을 창창창",
+	"platform":'Flash',
+	"game":"spear",
+	"comment":"testsetsetaset"
+},
+{
+	"year":2014,
+	"title":"갸아악 우주선",
+	"platform":'Android',
+	"game":"gyaak",
+	"comment":"testsetsetaset"
+},
+{
 	"year":2013,
 	"title":"어메이징 쉬리",
 	"platform":'Flash',
@@ -29,4 +43,4 @@ var data = [
 }
 ];
 
-if(articulate)articulate(data);
+articulate(data);
