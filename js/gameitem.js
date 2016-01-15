@@ -9,10 +9,8 @@ function game(title){
 function parser(e){
 	alert(this.requestText);
 	data = JSON.parse(this.requestText);
-	container.innerHTML += data;
-
 }
 
 request.onload = parser;
-request.open('GET', './data/gameDATA.json', true);
+request.open('GET', 'data/gameDATA.json', true);
 request.send();
