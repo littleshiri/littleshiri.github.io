@@ -13,4 +13,4 @@ var data = [
 }
 ];
 
-articulate(data);
+if(articulate)articulate(data);
