@@ -7,11 +7,12 @@ function game(title){
 	return html;
 }
 function parser(e){
-	alert("loaded");
+	alert(this.requestText);
 	data = JSON.parse(this.requestText);
 	container.innerHTML += data;
+
 }
 
-request.open('GET', './gameDATA.json', true);
+request.onload = parser;
+request.open('GET', 'js/gameDATA.json', true);
 request.send();
-request.addEventListener('load',parser);
