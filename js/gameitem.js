@@ -14,5 +14,5 @@ function parser(e){
 }
 
 request.onload = parser;
-request.open('GET', 'js/gameDATA.json', true);
+request.open('GET', './data/gameDATA.json', true);
 request.send();
