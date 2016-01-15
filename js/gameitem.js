@@ -6,7 +6,7 @@ function game(title){
 	var html = '<div class="gameitem">' + title + '</div>' ;
 	return html;
 }
-function parser(e){
+function parser(){
 	data = JSON.parse(this.requestText);
 	alert(data);
 	container.innerHTML += data;
