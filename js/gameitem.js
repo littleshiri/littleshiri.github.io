@@ -8,7 +8,8 @@ function game(d){
 function articulate(data){
 	var nowyear = 0
 	var html = ""
-	for (var d in data){
+	for (var i=0;i<data.length;i++){
+		var d = data[i];
 		if(nowyear!=d.year){
 			nowyear=d.year;
 			html += '<h1>' + nowyear + '</h1>'
@@ -17,3 +18,4 @@ function articulate(data){
 	}
 	container.innerHTML += html;
 }
+
