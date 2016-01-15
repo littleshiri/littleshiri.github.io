@@ -12,6 +12,6 @@ function parser(){
 	container.innerHTML += data;
 }
 
-req.open('GET', 'gameDATA.json', true);
-req.send();
-req.addEventListener('load',parser);
+request.open('GET', 'gameDATA.json', true);
+request.send();
+request.addEventListener('load',parser);
