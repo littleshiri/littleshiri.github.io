@@ -1,0 +1,158 @@
+==================================================
+스위치의 값을 컴퓨터로 읽기
+
+void setup() {
+  pinMode(13, INPUT_PULLUP);
+  Serial.begin(9600);
+}
+
+void loop() {
+  Serial.println( digitalRead(13) );
+  delay(250);
+}
+
+
+
+==================================================
+스위치로 서보모터 제어하기
+
+#include <Servo.h>
+Servo motor;
+
+void setup() {
+  motor.attach(3);
+  pinMode(13, INPUT_PULLUP);
+}
+
+void loop() {
+  if( digitalRead(13) ){
+    motor.write(30);
+  }else{
+    motor.write(150);
+  }
+}
+
+
+
+==================================================
+왔다갔다 하는 서보모터
+
+#include <Servo.h>
+Servo motor;
+int interval = 10;
+
+void setup() {
+  motor.attach(3);
+}
+
+void loop() {
+  for (int i = 0; i < 180; i++) {
+    motor.write(i);
+    delay(interval);
+  }
+  for (int i = 180; i > 0; i--) {
+    motor.write(i);
+    delay(interval);
+  }
+}
+
+
+==================================================
+서보모터에 명령 내리기
+
+#include <Servo.h>
+Servo motor;
+String data;
+
+void setup() {
+  motor.attach(3);
+  Serial.begin(9600);
+}
+
+void loop() {
+  while (Serial.available() > 0) {
+    int inChar = Serial.read();
+    if (isDigit(inChar)) data += (char)inChar;
+  }
+  if ( data.length() > 0 ) {
+    motor.write(data.toInt());
+    Serial.println(data);
+    data = "";
+  }
+  delay(100);
+}
+
+
+==================================================
+기본 바보상자
+
+#include <Servo.h>
+Servo motor;
+String data;
+
+void setup() {
+  motor.attach(3);
+  motor.write(15);
+  pinMode(13, INPUT_PULLUP);
+}
+
+void loop() {
+  if (digitalRead(13)) {
+    motor.write(175);
+    while (digitalRead(13)) {}
+    motor.write(15);
+  }
+}
+
+
+==================================================
+마음대로 기다리는 상자
+
+#include <Servo.h>
+Servo motor;
+String data;
+
+void setup() {
+  motor.attach(3);
+  motor.write(15);
+  pinMode(13, INPUT_PULLUP);
+}
+
+void loop() {
+  if (digitalRead(13)) {
+    delay(random(3000));
+    motor.write(175);
+    while (digitalRead(13)) {}
+    motor.write(15);
+  }
+}
+
+
+
+
+==================================================
+약올리는 상자
+
+#include <Servo.h>
+Servo motor;
+String data;
+
+void setup() {
+  motor.attach(3);
+  motor.write(15);
+  pinMode(13, INPUT_PULLUP);
+}
+
+void loop() {
+  if (digitalRead(13)) {
+    delay(random(3000));
+    for (int i = 0; i < random(4); i++) {
+      motor.write(15 + random(120));
+      delay(random(1000));
+    }
+    motor.write(175);
+    while (digitalRead(13)) {}
+    motor.write(15);
+  }
+}
+
